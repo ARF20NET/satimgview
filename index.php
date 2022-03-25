@@ -24,7 +24,7 @@ function array_search_partial($arr, $keyword) {
 }
 
 if (!isset($_GET["type"])) {
-	$_GET["type"] = "raw";
+	$_GET["type"] = "MCIR-precip";
 }
 
 check($_GET["type"]);
@@ -57,7 +57,6 @@ $type = $_GET['type'];
 		<p>Ground station location: IES Ramon Arcas [37.6765, -1.6942, 330.0]</p>
 		<hr>
 		<a class="home" href="/">Home</a><br>
-		<a class="text" href="?type=raw">raw</a>
 		<a class="text" href="?type=HVC">HVC</a>
 		<a class="text" href="?type=HVC-precip">HVC-precip</a>
 		<a class="text" href="?type=HVCT">HVCT</a>
